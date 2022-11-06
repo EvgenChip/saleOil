@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    font-family: 'Roboto', 'Montserrat', system-ui, -apple-system, sans-serif;
+}
+
+label {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container h1 {
+    padding-top: 100px;
+    padding-bottom: 48px;
+}
+
+.fuel-delivery {
+    margin-top: 90px;
+}
+.page__title {
+    padding-top: 90px;
+    font-size: 48px;
+    line-height: 59px;
+    padding-bottom: 48px;
+}
+

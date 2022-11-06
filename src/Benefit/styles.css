@@ -1,0 +1,36 @@
+.benefits {
+    padding-bottom: 100px;
+    background: #F9F9F9;
+}
+
+.benefits h1 {
+    padding-bottom: 47px;
+}
+
+.benefits__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+}
+
+.benefits__item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background: #FFFFFF;
+}
+
+.benefits__item p {
+    font-size: 14px;
+    line-height: 17px;
+
+}
+
+.benefits__item h2 {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+}

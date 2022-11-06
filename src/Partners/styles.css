@@ -1,0 +1,27 @@
+.partners__slider {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.partner__slider-wrapper {
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.swiper {
+    padding-bottom: 67px;
+}
+
+.swiper-wrapper {
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: flex-end;
+}
+
+.swiper-pagination {
+    padding-top: 10px;
+    position: absolute;
+}

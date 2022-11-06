@@ -1,0 +1,61 @@
+.header__top-inner {
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__contact-bar {
+    display: flex;
+}
+
+.header__contact-bar button {
+    width: 176px;
+    height: 46px;
+    background: #098FCF;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 14px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.header__contact-bar button:hover {
+    opacity: 1;
+}
+
+.header__contact-bar button a {
+    color: white;
+}
+
+.phone {
+    padding-top: 6px;
+    margin-right: 35px;
+}
+
+.phone img {
+    padding-top: 8px;
+    padding-right: 8px;
+}
+
+.phone a {
+    margin-bottom: 12px;
+    color: black;
+}
+
+.header__nav {
+    height: 60px;
+    margin-top: 25px;
+    background: #F9F9F9;
+}
+
+.header__nav-inner {
+    font-size: 15px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav-inner li a img {
+    padding-left: 8px;
+}

@@ -1,0 +1,120 @@
+.quickOrder__form {
+    margin-top: 48px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 10%);
+}
+
+.title {
+    padding-top: 49px;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+
+.title span {
+    color: #098FCF;
+}
+
+.quickOrder__form-inner__contacts {
+    align-items: end;
+    padding-top: 30px;
+    display: flex;
+}
+
+.quickOrder__form-inner__contacts button {
+    color: #FFFFFF;
+    align-items: end;
+    width: 176px;
+    height: 46px;
+    background: #098FCF;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.quickOrder__form-inner__contacts button:hover {
+    opacity: 1;
+}
+
+.quickOrder__form-inner__name {
+    display: flex;
+    flex-direction: column;
+}
+
+.quickOrder__form-inner__name input {
+    width: 273px;
+    height: 46px;
+    border: 1px solid #D5D5D5;
+}
+
+.quickOrder__form-inner__name::placeholder {
+    padding-left: 15px;
+    font-size: 14px;
+    color: #565656;
+}
+
+.quickOrder__form-inner__tel {
+    padding-right: 14px;
+    padding-left: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quickOrder__form-inner__tel input {
+    width: 273px;
+    height: 46px;
+    border: 1px solid #D5D5D5;
+}
+
+.quickOrder__form-inner__tel::placeholder {
+    padding-left: 15px;
+    font-size: 14px;
+    color: #565656;
+}
+
+.quickOrder__form-container {
+    max-width: 832px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.quickOrder__form-inner__checkbox {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 43px;
+}
+
+.quickOrder__form-inner__checkbox label {
+    padding-left: 16px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.checkbox {
+    display: none;
+}
+
+.fakeCheckBox {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D5D5D5;
+    position: relative;
+}
+
+.fakeCheckBox::before {
+    content: url('../assets/images/checkboxicon.svg');
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked+.fakeCheckBox::before {
+    opacity: 1;
+}
