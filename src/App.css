@@ -4,12 +4,14 @@
     padding: 0;
     list-style: none;
     outline: none;
-    font-family: 'Roboto', 'Montserrat', system-ui, -apple-system, sans-serif;
+    font-family:  'Montserrat',  'Roboto',  system-ui, -apple-system, sans-serif;
 }
 
 label {
+    font-weight: 500;
     font-size: 12px;
     line-height: 15px;
+    color: #000000;
 }
 
 a {
@@ -21,6 +23,12 @@ li {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
 }
 
 .container {
@@ -37,6 +45,7 @@ li {
 .fuel-delivery {
     margin-top: 90px;
 }
+
 .page__title {
     padding-top: 90px;
     font-size: 48px;
@@ -44,3 +53,22 @@ li {
     padding-bottom: 48px;
 }
 
+@media (max-width: 960px) {
+
+}
+
+
+@media (max-width: 320px){
+    .page__title {
+        padding-top: 30px;
+        font-size: 35px;
+        line-height: 36px;
+        padding-bottom: 30px;
+    }
+    .container h1 {
+        font-size: 22px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+}
+
+}

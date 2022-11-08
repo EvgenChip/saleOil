@@ -1,6 +1,6 @@
 .quickOrder__form {
     margin-top: 48px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 4px 30px rgb(0 0 0 / 10%);
 }
 
@@ -12,21 +12,22 @@
 }
 
 .title span {
-    color: #098FCF;
+    color: #098fcf;
 }
 
 .quickOrder__form-inner__contacts {
     align-items: end;
     padding-top: 30px;
     display: flex;
+    gap: 14px;
 }
 
 .quickOrder__form-inner__contacts button {
-    color: #FFFFFF;
+    color: #ffffff;
     align-items: end;
     width: 176px;
     height: 46px;
-    background: #098FCF;
+    background: #098fcf;
     border: none;
     cursor: pointer;
     opacity: 0.9;
@@ -42,9 +43,10 @@
 }
 
 .quickOrder__form-inner__name input {
+    padding-left: 15px;
     width: 273px;
     height: 46px;
-    border: 1px solid #D5D5D5;
+    border: 1px solid #d5d5d5;
 }
 
 .quickOrder__form-inner__name::placeholder {
@@ -54,8 +56,6 @@
 }
 
 .quickOrder__form-inner__tel {
-    padding-right: 14px;
-    padding-left: 14px;
     display: flex;
     flex-direction: column;
 }
@@ -63,7 +63,7 @@
 .quickOrder__form-inner__tel input {
     width: 273px;
     height: 46px;
-    border: 1px solid #D5D5D5;
+    border: 1px solid #d5d5d5;
 }
 
 .quickOrder__form-inner__tel::placeholder {
@@ -100,7 +100,7 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    border: 1px solid #D5D5D5;
+    border: 1px solid #d5d5d5;
     position: relative;
 }
 
@@ -112,9 +112,65 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: .2s;
+    transition: 0.2s;
 }
 
-.checkbox:checked+.fakeCheckBox::before {
+.checkbox:checked + .fakeCheckBox::before {
     opacity: 1;
 }
+
+@media (max-width: 960px) {
+}
+
+@media (max-width: 768px) {
+    .quickOrder__form-inner__contacts {
+        align-items: end;
+        padding-top: 30px;
+        gap: 14px;
+        display: contents;
+    }
+
+    .quickOrder__form-inner__name {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .quickOrder__form-inner__tel {
+        padding-bottom: 10px;
+    }
+
+
+}
+@media (max-width: 320px) {
+.page__title{
+    padding-top: 28px;
+    padding-bottom: 0px;
+    font-size: 27px;
+    line-height: 35px;
+}
+
+.title {
+    padding-top: 30px;
+    font-size: 27px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.quickOrder__form-inner__name input {
+    padding-left: 15px;
+    width: auto;
+    height: 40px;
+
+}
+.quickOrder__form-inner__tel input {
+    width: auto;
+    height: 40px;
+    border: 1px solid #d5d5d5;
+}
+
+
+
+
+}
+
+

@@ -20,7 +20,7 @@ export const Certificate = () => {
                             disabled={isDisabledPrevBtn}
                             onClick={prev}
                         >
-                            <img src={butPrev} alt="prew" />
+                            <img src={butPrev} alt="prev" />
                         </button>
                         <button
                             className="but-click"

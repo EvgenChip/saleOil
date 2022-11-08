@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { inputPhone } from '../utilit/function'
 import { useFuelCalculation } from './useFuelCalculation'
 import './styles.css'
 
@@ -67,9 +67,10 @@ export const FuelCalculation = () => {
                             </label>
                             <input
                                 className="fuel-calculation_input fuel-calculation__input_tel"
-                                placeholder="Имя"
+                                onChange={inputPhone}
                                 type="tel"
-                                id="fuelTelNumber"
+                                id="quickOrderTel"
+                                placeholder="+7( )___-__-__"
                             />
                         </div>
                     </div>
@@ -77,7 +78,9 @@ export const FuelCalculation = () => {
                         <h2>Итого</h2>
                         <div className="fuel-calculation__preview_cost-calculation">
                             <span>Стоимость топлива</span>
-                            <span>77 350.00 ₽</span>
+                            <span>
+                                <br /> 77 350.00 ₽
+                            </span>
                         </div>
                         <div className="fuel-calculation__preview_cost-calculation">
                             <div>
@@ -85,7 +88,7 @@ export const FuelCalculation = () => {
                                 <p>
                                     Цена и стоимость указаны ориентировочно.{' '}
                                     <br />
-                                    Точные цену и стоимость собщит наш менеджер
+                                    Точные цену и стоимость сообщит наш менеджер
                                     при <br />
                                     подтверждении заявки.
                                 </p>
@@ -100,7 +103,7 @@ export const FuelCalculation = () => {
                                     актуальны на 23.11.2020 г.
                                 </p>
                             </div>
-                            <span>6 953.00 ₽</span>
+                            <h4>6 953.00 ₽</h4>
                         </div>
                         <button className="fuel-calculation__preview_button">
                             Заказать топливо

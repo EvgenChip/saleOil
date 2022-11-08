@@ -1,11 +1,25 @@
+
+
+
 .priceOil__table {
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+}
+.table_title {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
 }
 
 .priceOil__table-sort {
     display: grid;
-    grid-template-rows: 1fr 5fr 8fr;
+    grid-template-rows: 5fr;
 }
 
 .inner_table-sort {
@@ -13,13 +27,27 @@
     padding-top: 16px;
     font-size: 24px;
     line-height: 29px;
-    color: #FFFFFF;
-    background: #098FCF;
+    color: #ffffff;
+    background: #098fcf;
+}
+
+.inner_aiTable-sort {
+    padding-left: 20px;
+    padding-top: 16px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+    background: #098fcf;
 }
 
 .priceOil__table-ecoClass {
     display: grid;
-    grid-template-rows: 1fr 3fr 2fr 3fr 2fr 3fr;
+    grid-template-rows: 3fr 2fr;
+}
+
+.priceOil__table-ecoClass-ai {
+    display: grid;
+    grid-template-rows: 3fr 2fr 3fr;
 }
 
 .priceOil__table-manufacturer {
@@ -38,15 +66,63 @@
 }
 
 .inner {
-    border: 1px solid #E7E7E7;
+    border: 1px solid #e7e7e7;
     padding-top: 16px;
     padding-left: 29px;
+    padding-bottom: 16px;
 }
 
 .innerTitle {
-    padding: 19px;
+    padding-left: 29px;
+    padding-bottom: 21px;
+    padding-top: 19px;
     display: grid;
     grid-row-gap: 1em;
-    background: #043C77;
-    color: #FFFFFF;
+    background: #043c77;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 320px) {
+    .table_title {
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 10px;
+        display: grid;
+        grid-template-columns: 20% 26% 27% 14% 13%;
+    }
+
+    .inner_aiTable-sort {
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-top: 16px;
+        font-size: 16px;
+        line-height: 23px;
+        color: #ffffff;
+        background: #098fcf;
+    }
+
+    .innerTitle {
+        display: grid;
+
+        background: #043c77;
+        color: #ffffff;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        padding-top: 19px;
+        padding-left: 1px;
+    }
+
+    .inner {
+        border: 1px solid #e7e7e7;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-bottom: 16px;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+
+
 }

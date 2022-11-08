@@ -1,8 +1,10 @@
 .header__top-inner {
+
     padding-top: 8px;
     display: flex;
     justify-content: space-between;
 }
+
 
 .header__contact-bar {
     display: flex;
@@ -23,14 +25,23 @@
 .header__contact-bar button:hover {
     opacity: 1;
 }
+.header__contact-bar button{
+
+}
+
 
 .header__contact-bar button a {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 13px;
     color: white;
 }
 
 .phone {
     padding-top: 6px;
     margin-right: 35px;
+    font-weight: 600;
+font-size: 18px;
 }
 
 .phone img {
@@ -50,7 +61,10 @@
 }
 
 .header__nav-inner {
+    font-weight: 600;
     font-size: 15px;
+    line-height: 18px;
+    color: #000;
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -58,4 +72,50 @@
 
 .header__nav-inner li a img {
     padding-left: 8px;
+}
+
+@media (max-width: 960px) {
+    .phone a {
+        margin-bottom: 12px;
+        color: red;
+    }
+}
+
+@media (max-width: 768px) {
+    .phone a {
+        margin-bottom: 12px;
+        color: blue;
+    }
+
+    .header__contact-bar {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+    .header__nav-inner {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        color: #000;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 320px){
+
+    .header__nav{
+        height:auto;
+        margin-top: 25px;
+    background: #F9F9F9
+    }
+    .header__top-inner{
+        display: inline;
+    }
+    .header__nav-inner{
+        display: inline;
+        font-size: 10px;
+        line-height: 15px;
+    }
 }

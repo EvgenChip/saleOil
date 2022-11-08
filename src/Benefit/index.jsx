@@ -17,18 +17,18 @@ export const Benefit = () => {
                     <div className="benefits__item">
                         <img src={quality} alt="quality" />
                         <div className="benefits__item-content">
-                            <h2>Качество топлива</h2>
-                            <span>
-                                Aliquam rhoncus et massa adipiscing risus leo
+                            <span>Качество топлива</span>
+                            <p>
+                                Aliquant rhoncus et massa adipiscing risus leo
                                 nec lacus, sagittis. Eu, purus ac nisi sit eget
                                 sed et, adipiscing felis.
-                            </span>
+                            </p>
                         </div>
                     </div>
                     <div className="benefits__item">
                         <img src={clock} alt="clock" />
                         <div className="benefits__item-content">
-                            <h2>Бережем ваше время и нервы</h2>
+                            <span>Бережем ваше время и нервы</span>
                             <p>
                                 Aliquam rhoncus et massa adipiscing risus leo
                                 nec lacus, sagittis. Eu, purus ac nisi sit eget
@@ -39,7 +39,7 @@ export const Benefit = () => {
                     <div className="benefits__item">
                         <img src={ruble} alt="ruble" />
                         <div className="benefits__item-content">
-                            <h2>Цена</h2>
+                            <span>Цена</span>
                             <p>
                                 Aliquam rhoncus et massa adipiscing risus leo
                                 nec lacus, sagittis. Eu, purus ac nisi sit eget
@@ -50,7 +50,7 @@ export const Benefit = () => {
                     <div className="benefits__item">
                         <img src={place} alt="place" />
                         <div className="benefits__item-content">
-                            <h2>Ваш комфорт—наша забота</h2>
+                            <span>Ваш комфорт—наша забота</span>
                             <p>
                                 Aliquam rhoncus et massa adipiscing risus leo
                                 nec lacus, sagittis. Eu, purus ac nisi sit eget
@@ -61,7 +61,7 @@ export const Benefit = () => {
                     <div className="benefits__item">
                         <img src={shield} alt="shield" />
                         <div className="benefits__item-content">
-                            <h2>Безопасность процесса</h2>
+                            <span>Безопасность процесса</span>
                             <p>
                                 Aliquam rhoncus et massa adipiscing risus leo
                                 nec lacus, sagittis. Eu, purus ac nisi sit eget
@@ -72,7 +72,7 @@ export const Benefit = () => {
                     <div className="benefits__item">
                         <img src={way} alt="way" />
                         <div className="benefits__item-content">
-                            <h2>Несколько ТС в одном месте?</h2>
+                            <span>Несколько ТС в одном месте?</span>
                             <p>
                                 Aliquam rhoncus et massa adipiscing risus leo
                                 nec lacus, sagittis. Eu, purus ac nisi sit eget

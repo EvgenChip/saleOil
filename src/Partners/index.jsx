@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import { useState } from 'react'
 
 import lukoil from '../assets/images/partners/lukoil.svg'
 import gazprom from '../assets/images/partners/gazprom.svg'
@@ -12,15 +13,23 @@ import tatneft from '../assets/images/partners/tatneft.svg'
 import './styles.css'
 
 export const Partners = () => {
+    const [width, setWidth] = useState(window.innerWidth)
+    const mobileScreen = width <= 320
+    const mobileScreenPl = width <= 760
+
     return (
         <div className="partners">
             <div className="container">
                 <h1>Наши партнеры</h1>
                 <div className="partners__slider">
                     <Swiper
-                        slidesPerView={4}
+                        slidesPerView={
+                            mobileScreen ? 1 : mobileScreenPl ? 3 : 4
+                        }
                         spaceBetween={30}
-                        slidesPerGroup={4}
+                        slidesPerGroup={
+                            mobileScreen ? 1 : mobileScreenPl ? 3 : 4
+                        }
                         loop={true}
                         loopFillGroupWithBlank={true}
                         pagination={{

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { inputPhone } from '../utilit/function'
 import logo from '../assets/images/logo.svg'
 import './styles.css'
 
@@ -16,8 +16,12 @@ export const Footer = () => {
                             время
                         </span>
                         <form action="">
-                            <input type="text" />
-                            <input type="text" />
+                            <input placeholder="Имя" type="text" />
+                            <input
+                                placeholder="+7( )___-__-__"
+                                onChange={inputPhone}
+                                type="tel"
+                            />
                             <button className="footer__top_button">
                                 {' '}
                                 Перезвонить мне{' '}
@@ -39,15 +43,30 @@ export const Footer = () => {
                         </div>
                         <div className="footer__bottom_info">
                             <ul>
-                                <li>Карта АЗС</li>
-                                <li>АЗС по региону</li>
-                                <li>АЗС по брендам</li>
-                                <li>Доставка топлива</li>
+                                <li>
+                                    {' '}
+                                    <a href="#">Карта АЗС</a>
+                                </li>
+                                <li>
+                                    <a href="#">АЗС по региону</a>
+                                </li>
+                                <li>
+                                    <a href="#">АЗС по брендам</a>
+                                </li>
+                                <li>
+                                    <a href="#">Доставка топлива</a>
+                                </li>
                             </ul>
                             <ul>
-                                <li>Контакты</li>
-                                <li>О компании</li>
-                                <li>Личный кабинет</li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Личный кабинет</a>
+                                </li>
                             </ul>
                         </div>
                         <div className="footer__bottom_contacts">

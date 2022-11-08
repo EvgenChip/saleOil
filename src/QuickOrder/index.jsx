@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { inputPhone } from '../utilit/function'
 import './styles.css'
 
 export const QuickOrder = () => {
@@ -25,7 +26,12 @@ export const QuickOrder = () => {
                                 <label htmlFor="quickOrderTel">
                                     Номер телефона
                                 </label>
-                                <input type="tel" id="quickOrderTel" />
+                                <input
+                                    onChange={inputPhone}
+                                    type="tel"
+                                    id="quickOrderTel"
+                                    placeholder="+7( )___-__-__"
+                                />
                             </div>
                             <button>Заказать топливо</button>
                         </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import cursorWorkSchem from '../assets/images/schemeWork/cursorWorkSchem.svg'
-import phoneWorkSchem from '../assets/images/schemeWork/phoneWorkSchem.svg'
+import cursorWorkScheme from '../assets/images/schemeWork/cursorWorkScheme.svg'
+import phoneWorkScheme from '../assets/images/schemeWork/phoneWorkScheme.svg'
 import oil from '../assets/images/schemeWork/oil.svg'
 import rightPointer from '../assets/images/schemeWork/rightPointer.svg'
 import './styles.css'
@@ -14,7 +14,7 @@ export const SchemeWork = () => {
                 <div className="scheme-of-work__inner">
                     <div className="scheme-of-work__item">
                         <div className="scheme-of-work__item-top">
-                            <img src={cursorWorkSchem} alt="Scheme of work" />
+                            <img src={cursorWorkScheme} alt="Scheme of work" />
                             <a href="#">
                                 <span>1-3 мин.</span>
                                 <img src={rightPointer} alt="" />
@@ -29,7 +29,7 @@ export const SchemeWork = () => {
                     </div>
                     <div className="scheme-of-work__item">
                         <div className="scheme-of-work__item-top">
-                            <img src={phoneWorkSchem} alt="" />
+                            <img src={phoneWorkScheme} alt="" />
                             <a href="#">
                                 <span>1-3 мин.</span>
                                 <img src={rightPointer} alt="Scheme of work" />

@@ -19,8 +19,8 @@ export const Header = () => {
                             <div className="phone">
                                 <img src={phone} alt="phone" />
                                 <span>
-                                    <a href="tel:+380441234567">
-                                        +38 (044) 123-45-67
+                                    <a href="tel:+7495127-82-80">
+                                        8 (495) 127-82-80
                                     </a>
                                 </span>
                             </div>

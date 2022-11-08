@@ -6,6 +6,9 @@
     display: flex;
     justify-content: space-between;
 }
+.reviews__top_button{
+    padding-top: 80px;
+}
 
 .reviews__slider {
     padding-top: 54px;
@@ -56,4 +59,23 @@
 
 .review_button:hover {
     opacity: 1;
+}
+
+
+
+@media (max-width: 320px){
+    .reviews__top{
+        padding-top: 10px;
+        display: inline;
+    }
+    .reviews__top_button{
+        padding-top: 10px;
+    }
+
+    .reviews__slider{
+        padding-top: 10px;
+    }
+    .review_button-wrapper{
+        padding-top: 10px;
+    }
 }

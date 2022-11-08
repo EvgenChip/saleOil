@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 const reviewList = [
     {
@@ -39,22 +39,46 @@ const reviewList = [
 ]
 
 export const useReviews = () => {
-    const [review, setReview] = useState(reviewList.slice(0, 2))
+    const [width, setWidth] = useState(window.innerWidth)
+    const mobileScreen = width <= 320
+
+    const [review, setReview] = useState(
+        reviewList.slice(0, mobileScreen ? 1 : 2)
+    )
     const position = useRef(1)
 
     const prev = () => {
-        setReview(reviewList.slice(--position.current, position.current + 2))
+        setReview(
+            reviewList.slice(
+                --position.current,
+                position.current + (mobileScreen ? 1 : 2)
+            )
+        )
     }
 
     const next = () => {
-        setReview(reviewList.slice(++position.current, position.current + 2))
+        setReview(
+            reviewList.slice(
+                ++position.current,
+                position.current + (mobileScreen ? 1 : 2)
+            )
+        )
     }
+    const updateDimensions = () => {
+        setWidth(window.innerWidth)
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', updateDimensions)
+        return () => window.removeEventListener('resize', updateDimensions)
+    }, [])
 
     return {
         review,
         prev,
         next,
         isDisabledPrevBtn: position.current < 1,
-        isDisabledNextBtn: position.current >= reviewList.length - 2,
+        isDisabledNextBtn:
+            position.current >= reviewList.length - (mobileScreen ? 1 : 2),
     }
 }

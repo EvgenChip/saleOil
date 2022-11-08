@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 import cer1 from '../assets/images/certificate/image1.jpg'
 import cer2 from '../assets/images/certificate/image2.jpg'
@@ -21,22 +21,47 @@ const images = [
 ]
 
 export const useCertificate = () => {
-    const [certificates, setCertificates] = useState(images.slice(0, 4))
+    const [width, setWidth] = useState(window.innerWidth)
+    const mobileScreen = width <= 320
+
+    const [certificates, setCertificates] = useState(
+        images.slice(0, mobileScreen ? 1 : 4)
+    )
     const position = useRef(1)
 
     const prev = () => {
-        setCertificates(images.slice(--position.current, position.current + 4))
+        setCertificates(
+            images.slice(
+                --position.current,
+                position.current + (mobileScreen ? 1 : 4)
+            )
+        )
     }
 
     const next = () => {
-        setCertificates(images.slice(++position.current, position.current + 4))
+        setCertificates(
+            images.slice(
+                ++position.current,
+                position.current + (mobileScreen ? 1 : 4)
+            )
+        )
     }
+
+    const updateDimensions = () => {
+        setWidth(window.innerWidth)
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', updateDimensions)
+        return () => window.removeEventListener('resize', updateDimensions)
+    }, [])
 
     return {
         certificates,
         prev,
         next,
         isDisabledPrevBtn: position.current < 1,
-        isDisabledNextBtn: position.current >= images.length - 4,
+        isDisabledNextBtn:
+            position.current >= images.length - (mobileScreen ? 1 : 4),
     }
 }

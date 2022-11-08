@@ -1,5 +1,13 @@
+.fuel-calculation__form span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
 .fuel-calculation {
-    background: #F9F9F9;
+    padding-bottom: 80px;
+
+    background: #f9f9f9;
 }
 
 .fuel-calculation__form {
@@ -19,12 +27,12 @@
 }
 
 .fuel-calculation_input {
-    padding: 13px 0 16px 15px;
+    padding: 12px 0 16px 15px;
     cursor: pointer;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     height: 46px;
-    border: 1px solid #D5D5D5;
-    font-size: 16px;
+    border: 1px solid #d5d5d5;
+
     line-height: 15px;
 }
 
@@ -43,7 +51,7 @@
 .fuel-calculation__preview_cost-calculation {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #E7E7E7;
+    border-bottom: 1px solid #e7e7e7;
     padding-top: 16px;
     padding-bottom: 16px;
 }
@@ -56,4 +64,47 @@
     color: #fff;
     border: none;
     cursor: pointer;
+    opacity: 0.8;
+}
+
+.fuel-calculation__preview button {
+    margin-top: 15px;
+}
+.fuel-calculation__preview button:hover {
+    opacity: 1;
+}
+
+@media (max-width: 960px) {
+}
+
+@media (max-width: 768px) {
+    .fuel-calculation__form {
+        padding-bottom: 73px;
+        display: inline;
+    }
+}
+@media (max-width: 320px) {
+    .fuel-calculation__preview {
+        padding: 20px;
+    }
+
+    .fuel-calculation__form span {
+        font-weight: bold;
+        padding-bottom: 10px;
+        font-size: 11px;
+        line-height: 150%;
+        color: black;
+    }
+
+    .fuel-calculation {
+        padding-bottom: 20px;
+    }
+
+    .fuel-calculation__preview_cost-calculation {
+        display: inline-block;
+        justify-content: space-between;
+        border-bottom: 1px solid #e7e7e7;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }

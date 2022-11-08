@@ -35,9 +35,9 @@
 .footer__top_inner form input {
     padding: 13px 0 16px 15px;
     cursor: pointer;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     height: 46px;
-    border: 1px solid #D5D5D5;
+    border: 1px solid #d5d5d5;
     font-size: 16px;
     line-height: 15px;
 }
@@ -97,4 +97,27 @@
 .footer__bottom_contacts {
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 960px) {
+    .footer__top_inner form {
+        display: grid;
+    }
+}
+@media (max-width: 768px) {
+    .footer__top_inner form {
+        display: grid;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer__bottom_inner {
+        padding: 20px;
+        display: inline;
+        justify-content: space-between;
+    }
+    .footer__bottom_info ul a {
+        font-size: 12px;
+        padding-top: 10px;
+    }
 }
